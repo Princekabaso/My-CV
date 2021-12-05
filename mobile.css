@@ -1,0 +1,203 @@
+
+@media (max-width: 450px) {
+    @font-face {
+        font-family: 'playfair';
+        src: url("fonts/PlayfairDisplay-VariableFont_wght.ttf");
+    }
+    @font-face {
+        font-family: 'PTSansNarrow-Regular';
+        src: url("fonts/PTSansNarrow-Regular.ttf");
+    }
+    @font-face {
+        font-family: 'Roboto-Regular';
+        src: url("fonts/Roboto-Regular.ttf");
+    }
+    @font-face {
+        font-family: 'Roboto-Medium';
+        src: url("fonts/Roboto-Medium.ttf");
+    }
+    header{
+        width: 100%;
+        height: 700px;
+        overflow: hidden;
+        background-image: url("img/header mobile.jpg");
+    }
+    header #buttons{
+        visibility: hidden;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+    
+    header #name{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        margin: auto;
+        margin-top: 48%;
+    }
+    header #name #first{
+        margin-right: 10px;
+        font-size: 40px;
+        color: white;
+    }
+    header #name #second{
+        margin-left: 12px;
+        font-size: 40px;
+        color: rgb(44, 44, 44);
+    }
+    header h1{
+        margin-top: 30%;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        color: rgb(65, 65, 65);
+    }
+    #bio{
+        width: 100%;
+        height: 350px;
+        border-bottom: 1px solid rgb(77, 77, 77);
+        background-image: url("img/Bio mobile.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #bio p{
+        width: 45%;
+        height: fit-content;
+        color: white;
+        margin-top: 11px;
+        font-size: 15px;
+        margin-left: 13px;
+        text-align: left;
+        font-family: 'playfair';
+        padding-top: 40px;
+    }  
+
+
+    /*SKILLS*/
+    #skills{
+        width: 100%;
+        height: 400px;
+        transition: 3s;
+        background-image: url("img/Skill (mobile).jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #skills #btncontainer{
+        margin-bottom: auto;
+        display: flex;
+        margin: auto;
+        margin-top: 30px;
+    }
+    #skills iframe{
+        width: 100%;
+        height: 85%;
+        transition: 3s;
+    }
+    #skills #btncontainer a img:hover{
+        transform: rotate(12deg);
+        transition: .2s;
+    }
+    #skills #btncontainer a{
+        background-color: rgb(66, 66, 66);
+        border: 1px solid rgb(128, 128, 128); 
+        display: flex;
+        margin-top: 20px;
+        padding: 10px;
+        height: 50px;
+        border-radius: 2px;
+        text-decoration: none;
+        color: rgb(199, 199, 199);
+        cursor: auto;
+        border-bottom: none;
+    }
+    #skills #btncontainer #skill{
+        border-bottom: none;
+        transform: skewX(35deg);
+        border-right: 7px solid white;
+        padding-left: 10px;
+        height: 10px;
+    }
+    #skills #btncontainer #skill #image0{
+        transform: skewX(-30deg);
+        width: 20px;
+        height: 20px;
+    }
+    #skills #btncontainer #graphical{
+        background-color: rgb(39, 39, 39);
+        color: rgb(199, 199, 199);
+        cursor: pointer;
+        transform: skewX(-29deg);
+        border-left: 7px solid rgb(39, 39, 39);
+        height: 10px;
+        width: 120px;
+    }
+    #skills #btncontainer #graphical h3{
+        transform: skewX(30deg);
+        font-size: 10px;
+        font-weight: 100;
+        font-family: 'playfair';
+    }
+    #skills #btncontainer #graphical img{
+        transform: skewX(30deg);
+        width: 20px;
+        height: 20px;
+        margin: 1px;
+    }
+    #skills #btncontainer #skill h3{
+        transform: skewX(-32deg);
+        font-size: 10px;
+        font-weight: 200;
+        font-family: 'playfair';
+    }
+    @keyframes image {
+        0%{
+            transform: rotate(0deg);
+            transform: skewX(30deg);
+        }
+        15%{
+            transform: rotate(0deg);
+            transform: skewX(30deg);
+        }
+        19%{
+            transform: rotate(0deg);
+            transform: skewX(30deg);
+        }
+        20%{
+            transform: rotate(15deg);
+            transform: skewX(30deg);
+        }
+        30%{
+            transform: rotate(15deg);
+            transform: skewX(30deg);
+        }
+        40%{
+            transform: rotate(12deg);
+            transform: skewX(30deg);
+        }
+        55%{
+            transform: rotate(12deg);
+            transform: skewX(30deg);
+        }
+        70%{
+            transform: rotate(-4deg);
+            transform: skewX(30deg);
+        }
+        70%{
+            transform: rotate(-4deg);
+            transform: skewX(30deg);
+        }
+        71%{
+            transform: rotate(0deg);
+            transform: skewX(30deg);
+        }
+        100%{
+            transform: rotate(0deg);
+            transform: skewX(30deg);
+        }
+    }
+
+}
+

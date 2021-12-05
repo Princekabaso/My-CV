@@ -1,0 +1,408 @@
+@font-face {
+    font-family: 'playfair';
+    src: url("fonts/PlayfairDisplay-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: 'PTSansNarrow-Regular';
+    src: url("fonts/PTSansNarrow-Regular.ttf");
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url("fonts/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url("fonts/Roboto-Medium.ttf");
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 600px;
+    background-image: url("img/header\ background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    font-family: 'playfair';
+    overflow: hidden;
+}
+header #buttons{
+    height: fit-content;
+    width: fit-content;
+}
+header #buttons button{
+    margin-top: 20px;
+    margin-left: 3px;
+    padding: 15px;
+    background-color:rgb(65, 65, 65);
+    border: 1px solid white;
+    cursor: pointer;
+    transition: .2s;
+    outline: none;
+    width: 130px;
+    height: 50px;
+    transform: skewX(-23deg);
+}
+header #buttons button:hover{
+    background-color: rgb(39, 39, 39);
+}
+header #buttons #first{
+    margin-left: 20px;
+}
+header #buttons button a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    transform: skewX(23deg);
+    text-align: center;
+}
+header #buttons button a h3{
+    transform: skewX(23deg);
+    font-weight: 100;
+    margin-top: -0px;
+}
+header #name{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    margin: auto;
+    margin-top: 7%;
+}
+header #name #first{
+    margin-right: 60px;
+    font-size: 90px;
+    color: white;
+}
+header #name #second{
+    margin-left: 20px;
+    font-size: 90px;
+    color: rgb(44, 44, 44);
+}
+#bio{
+    width: 100%;
+    height: 650px;
+    border-top:1px solid rgb(39, 39, 39);
+    border-bottom: 1px solid rgb(77, 77, 77);
+    background-image: url("img/Possible web profile 2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#bio p{
+    width: 40%;
+    height: fit-content;
+    color: white;
+    margin-top: 16%;
+    font-size: 25px;
+    margin-left: 18px;
+    text-align: center;
+}
+
+#skills{
+    width: 100%;
+    height: 600px;
+    transition: 3s;
+    background-image: url("img/Skill.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header #slidecontainer{
+    width: 200px;
+    height: 30px;
+    margin: auto;
+    overflow: hidden;
+}
+header #slidecontainer #pro{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    animation: animate 5s linear infinite;
+    margin-bottom: 3px;
+}
+header #slidecontainer #pro h2{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: -1px;
+    color: rgb(65, 65, 65);
+}
+header #slidecontainer #pro2{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 3px;
+}
+header #slidecontainer #pro2 h2{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: -1px;
+    color: rgb(65, 65, 65);
+}
+header #slidecontainer #gra h2{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+header #slidecontainer #gra{
+    width: 200px;
+    height: 30px;
+    margin-top: 30px;
+    margin: auto;
+    background-color:rgb(65, 65, 65);
+    margin-bottom: 3px;
+}
+header #slidecontainer #gra h2{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: -1px;
+    color: white;
+}
+header h1{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(65, 65, 65);
+}
+
+@keyframes animate {
+    0%{
+        margin-top: 0px;
+    }
+    20%{
+        margin-top: -30px;
+    }
+    50%{
+        margin-top: -30px;
+    }
+    71%{
+        margin-top: -65px;
+    }
+    100%{
+        margin-top: -65px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        width: 100%;
+        height: 600px;
+        background-image: url("img/header\ background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center;
+        font-family: 'playfair';
+        overflow: hidden;
+    }
+    header #buttons{
+        height: fit-content;
+        width: fit-content;
+    }
+    header #buttons button{
+        margin-top: 20px;
+        margin-left: 3px;
+        padding: 15px;
+        background-color:rgb(65, 65, 65);
+        border: 1px solid white;
+        cursor: pointer;
+        transition: .2s;
+        outline: none;
+        width: 130px;
+        height: 50px;
+        transform: skewX(-23deg);
+    }
+    header #buttons button:hover{
+        background-color: rgb(39, 39, 39);
+    }
+    header #buttons #first{
+        margin-left: 20px;
+    }
+    header #buttons button a{
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        width: 100%;
+        height: 100%;
+        transform: skewX(23deg);
+        text-align: center;
+    }
+    header #buttons button a h3{
+        transform: skewX(23deg);
+        font-weight: 100;
+        margin-top: -0px;
+    }
+    header #name{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        margin: auto;
+        margin-top: 9%;
+    }
+    header #name #first{
+        margin-right: 60px;
+        font-size: 90px;
+        color: white;
+    }
+    header #name #second{
+        margin-left: 20px;
+        font-size: 90px;
+        color: rgb(44, 44, 44);
+    }
+    #bio{
+        width: 100%;
+        height: 650px;
+        border-top:1px solid rgb(39, 39, 39);
+        border-bottom: 1px solid rgb(77, 77, 77);
+        background-image: url("img/Possible web profile 2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #bio p{
+        width: 40%;
+        height: fit-content;
+        color: white;
+        margin-top: 16%;
+        font-size: 25px;
+        margin-left: 18px;
+        text-align: center;
+    }
+    
+    #skills{
+        width: 100%;
+        height: 600px;
+        transition: 3s;
+        background-image: url("img/Skill (mobile).jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    header #slidecontainer{
+        width: 200px;
+        height: 30px;
+        margin: auto;
+        overflow: hidden;
+    }
+    header #slidecontainer #pro{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        animation: animate 5s linear infinite;
+        margin-bottom: 3px;
+    }
+    header #slidecontainer #pro h2{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin-top: -1px;
+        color: rgb(65, 65, 65);
+    }
+    header #slidecontainer #pro2{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        margin-bottom: 3px;
+    }
+    header #slidecontainer #pro2 h2{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin-top: -1px;
+        color: rgb(65, 65, 65);
+    }
+    header #slidecontainer #gra h2{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    header #slidecontainer #gra{
+        width: 200px;
+        height: 30px;
+        margin-top: 30px;
+        margin: auto;
+        background-color:rgb(65, 65, 65);
+        margin-bottom: 3px;
+    }
+    header #slidecontainer #gra h2{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin-top: -1px;
+        color: white;
+    }
+    header h1{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        color: rgb(65, 65, 65);
+    }
+    
+    @keyframes animate {
+        0%{
+            margin-top: 0px;
+        }
+        20%{
+            margin-top: -30px;
+        }
+        50%{
+            margin-top: -30px;
+        }
+        71%{
+            margin-top: -65px;
+        }
+        100%{
+            margin-top: -65px;
+        }
+    }
+
+    #skills #btncontainer #skill{
+        border-bottom: none;
+        transform: skewX(35deg);
+        margin-right: 50px;
+        border-right: 7px solid rgb(39, 39, 39);
+        padding-left: 15px;
+    }
+    #skills #btncontainer #skill img{
+        width: 35px;
+        height: 35px;
+    }
+    #skills #btncontainer #graphical{
+        background-color: rgb(39, 39, 39);
+        color: rgb(199, 199, 199);
+        cursor: pointer;
+        transform: skewX(-29deg);
+        border-left: 7px solid rgb(39, 39, 39);
+    }
+    #skills #btncontainer #graphical h3{
+        transform: skewX(30deg);
+    }
+    #skills #btncontainer #graphical img{
+        transform: skewX(30deg);
+    }
+    #skills #btncontainer #skill h3{
+        transform: skewX(-30deg);
+    }
+    #skills #btncontainer #skill img{
+        transform: skewX(-30deg);
+    }
+    #education{
+        width: 100%;
+        height: 600px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 10px;
+        background-image: url("img/education mobile.jpg")
+    }
+    
+    
+}

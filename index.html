@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince Kabaso</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="mobil 2.css">
+</head>
+<body id="body">
+    <header>
+        <div id="buttons">
+        <button id="first"><a href="#bio"><h3>Bio</h3></a></button>
+        <button><a href="#skills"><h3>Skills</h3></a></button>
+        <button><a href="#experience"><h3>Experience</h3></a></button>
+        <button><a href="#education"><h3>Referies</h3></a></button>
+        <button><a href="#contact"><h3>Contact</h3></a></button>
+    </div>
+    <div id="menu"><img src="img/Hamburger_icon.svg.png" alt=""></div>
+    <style>
+        
+        header #menu{
+            width: fit-content;
+            height: fit-content;
+        }
+        header #menu img{
+            width: 0px;
+            height: 0px;
+            visibility: hidden;
+        }
+        
+        @media (max-width: 320px) {
+        header #menu{
+        width: fit-content;
+        height: fit-content;
+        visibility: visible;
+        }
+        header #menu img{
+        width: 50px;
+        height: 50px;
+        -webkit-filter: grayscale() invert(.7);
+        visibility: visible;
+        }
+        }
+
+        @media (max-width: 450px) {
+        header #menu{
+        width: fit-content;
+        height: fit-content;
+        visibility: visible;
+        }
+        header #menu img{
+        width: 50px;
+        height: 50px;
+        -webkit-filter: grayscale() invert(.7);
+        visibility: visible;
+        }
+        }
+    </style>
+    <div id="name">
+        <h1 id="first">Prince</h1>
+        <h1 id="second">Kabaso</h1>
+    </div>
+    <h1>I am a</h1>
+    <div id="slidecontainer">
+        <div id="pro"><h2>Programmer</h2></div>
+        <div id="gra"><h2>Graphic Designer</h2></div>
+        <div id="pro2"><h2>Programmer</h2></div>
+    </div>
+    </header>
+    <div id="navbar">
+        <img src="img/cancel.png" alt="" id="cancel">
+        <ul>
+            <li><a href="#bio" id="biomobile"><h3> Bio</h3></a></li>
+            <li><a href="#skills" id="skillmobile"><h3>Skills</h3></a></li>
+            <li><a href="#experience" id="em"><h3>Experience</h3></a></li>
+            <li><a href="#education" id="rm"><h3>Referies</h3></a></li>
+            <li><a href="#contact" id="cm"><h3>Contact</h3></a></li>
+        </ul>
+    </div>
+    <style>
+        #navbar{
+            width: 0px;
+            height: 100%;
+            position: fixed;
+            overflow: hidden;
+        }
+        @media (max-width: 320px) {
+            #navbar{
+                top: 0;
+                width: 0%;
+                height: 100%;
+                background-color:rgb(25, 147, 247);
+                overflow: hidden;
+            }
+            #navbar img{
+                margin-top: 10%;
+                width: 30px;
+                height: 30px;
+                margin-left: 20px;
+                -webkit-filter: grayscale() invert(3);
+            }
+            #navbar ul{
+                width: fit-content;
+                margin-right: auto;
+                margin-top: 10%;
+            }
+            #navbar ul li{
+                margin-bottom: 13px;
+                list-style: none;
+                border: 1px solid black;
+                text-align: center;
+                transform: skewX(18deg);
+                width: 100px;
+            }
+            #navbar ul li a{
+                text-decoration: none;
+                width: 100%;
+                height: 100%;
+                outline: none;
+            }
+            #navbar ul li a h3{
+                font-weight:500;
+                font-size: 16px;
+                padding: 0;
+                transform: skewX(-18deg);
+                color: white;
+                font-family: 'playfair';
+            }
+            @keyframes navigation {
+                100%{
+                    width: 100%;
+                }
+            }
+            
+        }
+
+
+        
+        @media (max-width: 450px) {
+            #navbar{
+                top: 0;
+                width: 0%;
+                height: 100%;
+                background-color:rgb(25, 147, 247);
+                overflow: hidden;
+            }
+            #navbar img{
+                margin-top: 10%;
+                width: 30px;
+                height: 30px;
+                margin-left: 20px;
+                -webkit-filter: grayscale() invert(3);
+            }
+            #navbar ul{
+                width: fit-content;
+                margin-right: auto;
+                margin-top: 10%;
+            }
+            #navbar ul li{
+                margin-bottom: 13px;
+                list-style: none;
+                border: 1px solid black;
+                text-align: center;
+                transform: skewX(18deg);
+                width: 100px;
+            }
+            #navbar ul li a{
+                text-decoration: none;
+                width: 100%;
+                height: 100%;
+                outline: none;
+            }
+            #navbar ul li a h3{
+                font-weight:500;
+                font-size: 16px;
+                padding: 0;
+                transform: skewX(-18deg);
+                color: white;
+                font-family: 'playfair';
+            }
+            @keyframes navigation {
+                100%{
+                    width: 100%;
+                }
+            }
+            
+        }
+    </style>
+    
+    <script>
+        menu.addEventListener("click", function(){
+            navbar.style.animation = "navigation 1s linear forwards";
+            body.style.overflow = "hidden";
+        });
+        cancel.addEventListener("click", function(){
+            navbar.style.animation = "";
+            body.style.overflow = "auto";
+        });
+        biomobile.addEventListener("click", function(){
+            navbar.style.animation = "";
+            body.style.overflow = "auto";
+        });
+        skillmobile.addEventListener("click", function(){
+            navbar.style.animation = "";
+            body.style.overflow = "auto";
+        });
+        em.addEventListener("click", function(){
+            navbar.style.animation = "";
+            body.style.overflow = "auto";
+        });
+        rm.addEventListener("click", function(){
+            navbar.style.animation = "";
+            body.style.overflow = "auto";
+        });
+        cm.addEventListener("click", function(){
+            navbar.style.animation = "";
+            body.style.overflow = "auto";
+        });
+    </script>
+    <div id="bio">
+        <p>Prince Kabaso is a third year Computer Science student possessing strong knowledge of programming. Able to quickly master new software packages, hardware technologies and new programming languages.</p>
+    </div>
+    <div id="skills">
+        <div id="btncontainer">
+            <a href="Navigation/skill.html" target="fra" id="skill"><img src="img/pencil.png" alt="" id="image0"><h3>Skills</h3></a>
+            <a href="Navigation/Programming.html" target="fra" id="graphical"><img src="img/17524473901594721603-128_2.png" alt="" id="image"> <h3>Programming Skills and tech related</h3></a>
+        </div>
+        <iframe src="Navigation/skill.html" frameborder="0" name="fra"></iframe>
+    </div>
+    <div id="experience">
+        <iframe src="Navigation/First Experience.html" frameborder="0" name="exp"></iframe>  
+        <div id="all">
+        <div id="msg">
+            <h3>Next Job Experience</h3>
+        </div>
+        <div id="arrowcontainer">
+            <a href="Navigation/First Experience.html" target="exp"><img src="img/iconfinder_circle-back-arrow-glyph_763477.png" alt="" id="prev"></a>
+            <a href="Navigation/Second Experience.html" target="exp"><img src="img/iconfinder_circle-back-arrow-glyph_763477.png" alt="" id="nxt"></a>
+        </div>
+        </div>
+    </div>
+    <div id="education">
+        <div id="edubtn">
+            <a href="Navigation/referies.html" target="edu" id="refer"><img src="img/toppng.com-businessman-paper-of-the-application-for-a-job-comments-reference-icon-for-resume-874x980.png" alt="" id="ref"><h3>Referees</h3></a>
+            <a href="Navigation/education.html" target="edu" id="educ"><img src="img/graduate-icon-7829_2.png" alt=""><h3>Education</h3></a>
+        </div>
+        <iframe src="Navigation/referies.html" frameborder="0" name="edu"></iframe>
+    </div>
+    <footer>
+        <div id="contact">
+            <a href="mailto:Princekabaso09@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+            <a href="tel:0972037074" target="_blank" rel="noopener noreferrer">Phone</a>
+            <a href="https://wa.me/+260965938207" target="_blank" rel="noopener noreferrer">Whatsapp</a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </div>
+        <div id="designer">
+            <p>Designed and Developed by:</p>
+            <h1>Prince Kabaso</h1>
+        </div>
+    </footer>
+    <script>
+        educ.addEventListener("click", function(){
+            refer.style.backgroundColor = "rgb(39, 39, 39)";
+            educ.style.backgroundColor = "rgb(77, 77, 77)";
+            educ.style.cursor = "auto";
+            refer.style.cursor = "pointer";
+        });
+        refer.addEventListener("click", function(){
+            educ.style.backgroundColor = "rgb(39, 39, 39)";
+            refer.style.backgroundColor = "rgb(77, 77, 77)";
+            refer.style.cursor = "auto";
+            educ.style.cursor = "pointer";
+        });
+    </script>
+    <style>
+
+        footer{
+            width: 100%;
+            height: 400px;
+            display: flex;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("img/footer.jpg")
+        }
+        footer #contact{
+            width: fit-content;
+            height: fit-content;
+            display: grid;
+            margin: auto;
+        }
+        footer #contact a{
+            font-size: 22px;
+            margin-bottom: 25px;
+            color:rgb(199, 199, 199);
+            font-family: 'playfair';
+        }
+        footer #designer{
+            width: fit-content; 
+            height: fit-content;
+            margin: auto;
+            font-family: 'playfair';
+            color:rgb(199, 199, 199);
+        }
+        footer #designer h1{
+            font-family: 'playfair';
+        }
+        #education{
+            width: 100%;
+            height: 600px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 10px;
+            background-image: url("img/education.jpg")
+        }
+        #education iframe{
+            width: 100%;
+            height: 400px;
+            margin-top: 100px;
+        }
+        #education #edubtn{
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        #education #edubtn a{
+            border:1px solid rgb(199, 199, 199);
+            display: flex;
+            margin-left: 10px;
+            transform: skewX(-35deg);
+            padding-left: 30px;
+            padding-right: 30px;
+            text-decoration: none;
+            color:rgb(199, 199, 199);
+        }
+        #education #edubtn a img{
+            width: 60px;
+            height: 60px;
+            transform: skewX(35deg);
+            -webkit-filter: grayscale() invert(.8);
+        }
+        #education #edubtn a #ref{
+            width: 40px;
+            height: 40px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        #education #edubtn #educ{
+            background-color:rgb(39, 39, 39);
+        }
+        #education #edubtn a h3{
+            transform: skewX(35deg);
+            margin-left: 10px;
+        }
+        #experience #all #msg{
+            width: fit-content;
+            height: fit-content;
+            padding: 10px;
+            border-radius: 20px;
+            margin: auto;
+            margin-right: 100px;
+            color: white;
+            background-color: rgb(25, 147, 247);
+            font-family: 'Roboto-Regular';
+            visibility: hidden;
+        }
+        #experience #all #msg h3{
+            font-family: 'Roboto-Regular';
+            font-weight: 100;
+        }
+        #experience #all{
+            width: fit-content;
+            height: fit-content;
+            margin-left: auto;
+            margin-top: -180px;
+        }
+        #experience #all #arrowcontainer{
+            width: fit-content;
+            height: fit-content;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: 20px;
+            cursor: pointer;
+        } 
+        #experience #all #arrowcontainer a img{
+            width: 70px;
+            height: 70px;
+            -webkit-filter: grayscale() invert(1);
+        }
+        #experience #all #arrowcontainer a #nxt{
+            transform: rotate(180deg)
+        }
+        #experience #all #arrowcontainer a #prev{
+            visibility: hidden;
+        }
+        #experience #all #arrowcontainer div{
+            width: 50px;
+            height: 50px;
+            border-top: 3px solid grey;
+            border-right: 3px solid grey;
+            transform: rotate(45deg);
+            margin-right: 10px;
+        }
+        #experience{
+            width: 100%;
+            height: 500px;
+            background-image: url("img/experience.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #experience #disa{
+            width: 300px;
+            height: 50px;
+            margin-top: 100px;
+            cursor: pointer;
+        }
+        #experience #antrial{
+            width: 100px;
+            height: 30px;
+            background-color: black;
+            margin-top: 100px;
+            visibility: hidden;
+        }
+        @keyframes appear{
+            100%{
+                visibility: visible;
+            }
+        }
+        #skills #btncontainer{
+            margin-bottom: auto;
+            display: flex;
+            width: fit-content;
+            margin: auto;
+        }
+        #skills #btncontainer a img{
+            width: 45px;
+            height: 45px;
+            -webkit-filter: grayscale() invert(.8);
+        }
+        #skills #btncontainer #skill{
+            margin-right: 15px;
+        }
+        #skills #btncontainer a img:hover{
+            transform: rotate(12deg);
+            transition: .2s;
+        }
+        #skills #btncontainer a{
+            background-color: rgb(66, 66, 66);
+            border: 1px solid rgb(128, 128, 128); 
+            display: flex;
+            margin-top: 20px;
+            padding: 10px;
+            padding-bottom: 20px;
+            height: 50px;
+            border-radius: 2px;
+            text-decoration: none;
+            color: rgb(199, 199, 199);
+            cursor: auto;
+            border-bottom: none;
+        }
+        #skills #btncontainer #skill{
+            border-bottom: none;
+            transform: skewX(35deg);
+            margin-right: 50px;
+            border-right: 7px solid rgb(39, 39, 39);
+            padding-left: 15px;
+        }
+        #skills #btncontainer #skill img{
+            width: 35px;
+            height: 35px;
+        }
+        #skills #btncontainer #graphical{
+            background-color: rgb(39, 39, 39);
+            color: rgb(199, 199, 199);
+            cursor: pointer;
+            transform: skewX(-29deg);
+            border-left: 7px solid rgb(39, 39, 39);
+        }
+        #skills #btncontainer #graphical h3{
+            transform: skewX(30deg);
+        }
+        #skills #btncontainer #graphical img{
+            transform: skewX(30deg);
+        }
+        #skills #btncontainer #skill h3{
+            transform: skewX(-30deg);
+        }
+        #skills #btncontainer #skill img{
+            transform: skewX(-30deg);
+        }
+        @keyframes image {
+            0%{
+                transform: rotate(0deg);
+                transform: skewX(30deg);
+            }
+            15%{
+                transform: rotate(0deg);
+                transform: skewX(30deg);
+            }
+            19%{
+                transform: rotate(0deg);
+                transform: skewX(30deg);
+            }
+            20%{
+                transform: rotate(15deg);
+                transform: skewX(30deg);
+            }
+            30%{
+                transform: rotate(15deg);
+                transform: skewX(30deg);
+            }
+            40%{
+                transform: rotate(12deg);
+            }
+            55%{
+                transform: rotate(12deg);
+                transform: skewX(30deg);
+            }
+            70%{
+                transform: rotate(-4deg);
+                transform: skewX(30deg);
+            }
+            70%{
+                transform: rotate(-4deg);
+                transform: skewX(30deg);
+            }
+            71%{
+            }
+            100%{
+                transform: rotate(0deg);
+                transform: skewX(30deg);
+            }
+        }
+        @keyframes changebg{
+            100%{
+                background-color: rgb(77, 77, 77);
+            }
+        }
+        @keyframes linkbg {
+            100%{
+                background-color: rgb(39, 39, 39);
+            }
+        }
+        @keyframes backlight {
+            100%{
+                box-shadow: 0 0 20px 0 white;
+                transition: .5s;
+            }
+        }
+        #skills #btncontainer a h3{
+            margin: auto;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            font-family: 'Roboto-Regular';
+            text-decoration: none;
+        }
+        #skills iframe{
+            width: 100%;
+            height: 80%;
+            margin-top: 2%;
+            transition: 3s;
+            
+        }
+        #experience iframe{
+            width: 100%;
+            height: 90%;
+        }
+
+
+
+
+
+        @media (max-width: 320px) {
+            #experience #all{
+            width: fit-content;
+            height: fit-content;
+            margin-left: auto;
+            margin-top: -140px;
+        }
+        #experience #all #arrowcontainer{
+            width: fit-content;
+            height: fit-content;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: 20px;
+            cursor: pointer;
+        } 
+        #experience #all #arrowcontainer a img{
+            width: 45px;
+            height: 45px;
+            -webkit-filter: grayscale() invert(1);
+        }
+            #skills #btncontainer a h3{
+            margin: auto;
+            margin-left: 1px;
+            margin-bottom: 10px;
+            font-family: 'Roboto-Regular';
+            text-decoration: none;
+            }
+            #skills #btncontainer #skill{
+            border-bottom: none;
+            transform: skewX(35deg);
+            margin-right: 25px;
+            border-right: 7px solid rgb(39, 39, 39);
+            padding-left: 15px;
+        }
+
+            #experience{
+            width: 100%;
+            height: 500px;
+            border-top: 1px solid rgb(128, 128, 128);
+            background-image: url("img/experience mobile.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #experience iframe{
+            width: 100%;
+            height: 495px;
+        }
+        #education{
+            width: 100%;
+            height: 700px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 10px;
+            background-image: url("img/education mobile.jpg")
+        }
+        #education iframe{
+            margin-top: -2px;
+            width: 100%;
+            height: 600px;
+        }
+
+
+        #education #edubtn{
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-bottom: 20px;
+        }
+        #education #edubtn a{
+            border:1px solid rgb(199, 199, 199);
+            display: flex;
+            margin-left: 10px;
+            transform: skewX(-35deg);
+            padding-left: 10px;
+            padding-right: 10px;
+            text-decoration: none;
+            color:rgb(199, 199, 199);
+        }
+        #education #edubtn a img{
+            width: 40px;
+            height: 40px;
+            transform: skewX(35deg);
+            -webkit-filter: grayscale() invert(.8);
+        }
+        #education #edubtn a #ref{
+            width: 20px;
+            height: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        #education #edubtn #educ{
+            background-color:rgb(39, 39, 39);
+        }
+        #education #edubtn a h3{
+            transform: skewX(35deg);
+            margin-left: 10px;
+            font-size: 10px;
+        }
+
+
+        footer{
+            width: 100%;
+            height: 250px;
+            display: flex;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("img/footer.jpg")
+        }
+        footer #contact{
+            width: fit-content;
+            height: fit-content;
+            display: grid;
+            margin: auto;
+        }
+        footer #contact a{
+            font-size: 14px;
+            margin-bottom: 15px;
+            color:rgb(199, 199, 199);
+            font-family: 'playfair';
+        }
+        footer #designer{
+            width: fit-content; 
+            height: fit-content;
+            margin: auto;
+            font-family: 'playfair';
+            color:rgb(199, 199, 199);
+            margin-right: 10px;
+        }
+        footer #designer h1{
+            font-family: 'playfair';
+            font-size: 14px;
+        }
+        footer #designer p{
+            font-size: 10px;
+        }
+        }
+
+
+
+        @media (max-width: 450px) {
+            #experience #all{
+            width: fit-content;
+            height: fit-content;
+            margin-left: auto;
+            margin-top: -140px;
+        }
+        #experience #all #arrowcontainer{
+            width: fit-content;
+            height: fit-content;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: 20px;
+            cursor: pointer;
+        } 
+        #experience #all #arrowcontainer a img{
+            width: 45px;
+            height: 45px;
+            -webkit-filter: grayscale() invert(1);
+        }
+            #skills #btncontainer a h3{
+            margin: auto;
+            margin-left: 1px;
+            margin-bottom: 10px;
+            font-family: 'Roboto-Regular';
+            text-decoration: none;
+            }
+            #skills #btncontainer #skill{
+            border-bottom: none;
+            transform: skewX(35deg);
+            margin-right: 25px;
+            border-right: 7px solid rgb(39, 39, 39);
+            padding-left: 15px;
+        }
+
+            #experience{
+            width: 100%;
+            height: 500px;
+            border-top: 1px solid rgb(128, 128, 128);
+            background-image: url("img/experience mobile.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #experience iframe{
+            width: 100%;
+            height: 495px;
+        }
+        #education{
+            width: 100%;
+            height: 700px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 10px;
+            background-image: url("img/education mobile.jpg")
+        }
+        #education iframe{
+            margin-top: -2px;
+            width: 100%;
+            height: 600px;
+        }
+
+
+        #education #edubtn{
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-bottom: 20px;
+        }
+        #education #edubtn a{
+            border:1px solid rgb(199, 199, 199);
+            display: flex;
+            margin-left: 10px;
+            transform: skewX(-35deg);
+            padding-left: 10px;
+            padding-right: 10px;
+            text-decoration: none;
+            color:rgb(199, 199, 199);
+        }
+        #education #edubtn a img{
+            width: 40px;
+            height: 40px;
+            transform: skewX(35deg);
+            -webkit-filter: grayscale() invert(.8);
+        }
+        #education #edubtn a #ref{
+            width: 20px;
+            height: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        #education #edubtn #educ{
+            background-color:rgb(39, 39, 39);
+        }
+        #education #edubtn a h3{
+            transform: skewX(35deg);
+            margin-left: 10px;
+            font-size: 10px;
+        }
+
+
+        footer{
+            width: 100%;
+            height: 250px;
+            display: flex;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("img/footer.jpg")
+        }
+        footer #contact{
+            width: fit-content;
+            height: fit-content;
+            display: grid;
+            margin: auto;
+        }
+        footer #contact a{
+            font-size: 14px;
+            margin-bottom: 15px;
+            color:rgb(199, 199, 199);
+            font-family: 'playfair';
+        }
+        footer #designer{
+            width: fit-content; 
+            height: fit-content;
+            margin: auto;
+            font-family: 'playfair';
+            color:rgb(199, 199, 199);
+            margin-right: 10px;
+        }
+        footer #designer h1{
+            font-family: 'playfair';
+            font-size: 14px;
+        }
+        footer #designer p{
+            font-size: 10px;
+        }
+    }
+
+
+
+        @media (max-width: 320px) {
+    @font-face {
+        font-family: 'playfair';
+        src: url("fonts/PlayfairDisplay-VariableFont_wght.ttf");
+    }
+    @font-face {
+        font-family: 'PTSansNarrow-Regular';
+        src: url("fonts/PTSansNarrow-Regular.ttf");
+    }
+    @font-face {
+        font-family: 'Roboto-Regular';
+        src: url("fonts/Roboto-Regular.ttf");
+    }
+    @font-face {
+        font-family: 'Roboto-Medium';
+        src: url("fonts/Roboto-Medium.ttf");
+    }
+    header{
+        width: 100%;
+        height: 600px;
+        overflow: hidden;
+        background-image: url("img/header mobile.jpg");
+    }
+    header #buttons{
+        visibility: hidden;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+    
+    header #name{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        margin: auto;
+        margin-top: 48%;
+    }
+    header #name #first{
+        margin-right: 10px;
+        font-size: 40px;
+        color: white;
+    }
+    header #name #second{
+        margin-left: 12px;
+        font-size: 40px;
+        color: rgb(44, 44, 44);
+    }
+    header h1{
+        margin-top: 30%;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        color: rgb(65, 65, 65);
+    }
+    #bio{
+        width: 100%;
+        height: 350px;
+        border-bottom: 1px solid rgb(77, 77, 77);
+        background-image: url("img/Bio mobile.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #bio p{
+        width: 45%;
+        height: fit-content;
+        color: white;
+        margin-top: 11px;
+        font-size: 15px;
+        margin-left: 13px;
+        text-align: left;
+        font-family: 'playfair';
+        padding-top: 40px;
+    }  
+
+
+    /*SKILLS*/
+    #skills{
+        margin-top: -30px;
+        width: 100%;
+        height: 400px;
+        transition: 3s;
+        background-image: url("img/Skill (mobile).jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #skills #btncontainer{
+        margin-bottom: auto;
+        display: flex;
+        margin: auto;
+        margin-top: 30px;
+    }
+    #skills iframe{
+        width: 100%;
+        height: 85%;
+        transition: 3s;
+    }
+    #skills #btncontainer a img:hover{
+        transform: rotate(12deg);
+        transition: .2s;
+    }
+    #skills #btncontainer a{
+        background-color: rgb(66, 66, 66);
+        border: 1px solid rgb(128, 128, 128); 
+        display: flex;
+        margin-top: 20px;
+        padding: 10px;
+        height: 50px;
+        border-radius: 2px;
+        text-decoration: none;
+        color: rgb(199, 199, 199);
+        cursor: auto;
+        border-bottom: none;
+    }
+    #skills #btncontainer #skill{
+        border-bottom: none;
+        transform: skewX(35deg);
+        border-right: 7px solid rgb(39, 39, 39);
+        padding-left: 13px;
+        height: 10px;
+    }
+    #skills #btncontainer #skill #image0{
+        transform: skewX(-30deg);
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+    #skills #btncontainer #graphical{
+        background-color: rgb(39, 39, 39);
+        color: rgb(199, 199, 199);
+        cursor: pointer;
+        transform: skewX(-29deg);
+        border-left: 7px solid rgb(39, 39, 39);
+        height: 10px;
+        width: 120px;
+        padding: 10px;
+    }
+    #skills #btncontainer #graphical h3{
+        transform: skewX(30deg);
+        font-size: 10px;
+        font-weight: 100;
+        font-family: 'playfair';
+        margin-top: -10px;
+    }
+    #skills #btncontainer #graphical img{
+        transform: skewX(30deg);
+        width: 20px;
+        height: 20px;
+        margin: 1px;
+        margin-top: -5px;
+    }
+    #skills #btncontainer #skill h3{
+        transform: skewX(-32deg);
+        font-size: 10px;
+        font-weight: 200;
+        font-family: 'playfair';
+    }
+    @keyframes image {
+        0%{
+            transform: rotate(0deg);
+            transform: skewX(30deg);
+        }
+        15%{
+            transform: rotate(0deg);
+            transform: skewX(30deg);
+        }
+        19%{
+            transform: rotate(0deg);
+            transform: skewX(30deg);
+        }
+        20%{
+            transform: rotate(15deg);
+            transform: skewX(30deg);
+        }
+        30%{
+            transform: rotate(15deg);
+            transform: skewX(30deg);
+        }
+        40%{
+            transform: rotate(12deg);
+            transform: skewX(30deg);
+        }
+        55%{
+            transform: rotate(12deg);
+            transform: skewX(30deg);
+        }
+        70%{
+            transform: rotate(-4deg);
+            transform: skewX(30deg);
+        }
+        70%{
+            transform: rotate(-4deg);
+            transform: skewX(30deg);
+        }
+        71%{
+            transform: rotate(0deg);
+            transform: skewX(30deg);
+        }
+        100%{
+            transform: rotate(0deg);
+            transform: skewX(30deg);
+        }
+    }
+
+}
+    </style>
+    <script>
+        var i = 0;
+        nxt.style.opacity = ".8";
+        nxt.addEventListener("mouseover", function(){
+            msg.style.animation = "appear 3s linear";
+        });
+        nxt.addEventListener("click", function(){
+            prev.style.visibility = "visible";
+            prev.style.opacity = ".8";
+            nxt.style.visibility = "hidden";
+        });
+        prev.addEventListener("click", function(){
+            prev.style.visibility = "hidden";
+            nxt.style.visibility = "visible";
+            nxt.style.opacity = ".8";
+        });
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
