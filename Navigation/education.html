@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referies</title>
+</head>
+<body>
+    <div id="container">
+        <div id="col">
+            <h2>Bachelors of Science in Computer Science</h2>
+            <ul>
+                <li>Status - Ongoing</li>
+                <li>2019 - To Date</li>
+                <li>DMI ST.Eugine University</li>
+                <li>Chibombo Campus, Lusaka, Zambia</li>
+            </ul>
+        </div>
+        <div id="high">
+            <h2>GCE school certificate</h2>
+            <ul>
+                <li>Arakan High school</li>
+                <li>2011-2013 </li>
+                <li>Lusaka, Zambia</li>
+            </ul>
+        </div>
+        <div id="primary">
+            <h2>Mumuni Basic School</h2>
+            <ul>
+                <li>2009-2010 </li>
+                <li>Lusaka, Zambia</li>
+            </ul>
+        </div>
+    </div>
+    <style>
+        @font-face {
+            font-family: 'playfair';
+            src: url("../fonts/PlayfairDisplay-VariableFont_wght.ttf");
+        }
+        @font-face {
+            font-family: 'PTSansNarrow-Regular';
+            src: url("../fonts/PTSansNarrow-Regular.ttf");
+        }
+        @font-face {
+            font-family: 'Roboto-Regular';
+            src: url("../fonts/Roboto-Regular.ttf");
+        }
+        @font-face {
+            font-family: 'Roboto-Medium';
+            src: url("../fonts/Roboto-Medium.ttf");
+        }
+        @font-face {
+            font-family: 'OpenSansCondensed-Light';
+            src: url("../fonts/OpenSansCondensed-Light.ttf");
+        }
+        #container div ul li{
+            margin-bottom: 15px;
+            list-style: none;
+            font-size: 22px;
+            font-family: 'Roboto-Regular';
+        }
+        #container{
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            margin: auto;
+        }
+        #container div{
+            margin: 20px;
+            padding: 20px;
+            color: rgb(202, 202, 202);
+            background-color: rgb(39, 39, 39);
+        }
+        #container div h2{
+            font-family: 'playfair';
+        }
+
+
+        /*MAX_WIDTH: 320px*/
+        @media (max-width: 320px) {
+            #container div ul li{
+            margin-bottom: 15px;
+            list-style: none;
+            font-size: 10px;
+            font-family: 'Roboto-Regular';
+        }
+        #container{
+            width: fit-content;
+            height: fit-content;
+            display: grid;
+            margin: auto;
+        }
+        #container div{
+            margin: 5px;
+            padding: 10px;
+            color: rgb(202, 202, 202);
+            background-color: rgb(39, 39, 39);
+        }
+        #container div h2{
+            font-family: 'playfair';
+            font-size: 10px;
+        }
+        }
+    </style>
+</body>
+</html>
